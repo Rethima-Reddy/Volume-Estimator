@@ -1,7 +1,7 @@
-const per = (x, y, z) => { return 4 * (x + y + z) }
+const vol = (x, y, z) => { return x * y * z }
 
-const peri = new Vue({
-    el: '#peri',
+const volu = new Vue({
+    el: '#volu',
     data: {
         length1: 6,
         height1: 2,
@@ -12,7 +12,7 @@ const peri = new Vue({
             const i = parseInt(this.length1)
             const j = parseInt(this.height1)
             const k = parseInt(this.width1)
-            return `${per(i, j, k)}.`
+            return `${vol(i, j, k)}.`
         }
     }
 }) 
